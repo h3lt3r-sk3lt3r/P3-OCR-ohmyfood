@@ -16,7 +16,7 @@
       padding: 20px;
       @include flexbox-center();
       flex-direction: column;
-      padding: 50px 0;
+      padding-top: 30px;
     }
 
     &__title {
@@ -38,29 +38,26 @@
     }
 }
 
-.working__contain {
+.working {
   padding: 25px 0;
   width: 100%;
   background: white;
   @include flexbox-center;
-}
-
-.working {
-  // width: 95%;
-  max-width: 1280px;
-  background-color: white;
-  margin: auto;
-  // padding: 0;
-  // display: flex;
-  //flex-direction: column;
+    &__contain {
+      max-width: 1280px;
+      background-color: white;
+      margin: auto;
+      position: relative;
+    }
     &__title {
-      margin: 0;
+      margin-bottom: 5px;
+      margin-top: 0;
     }
     &__step {
       display: flex;
       align-items: center;
       background: #f6f6f6;
-      padding: 1rem;
+      padding: 8px 20px;
       margin: 10px 20px;
       border-radius: 20px;
       position: relative;
@@ -73,6 +70,7 @@
       padding: 3px 8px 3px 8px;
       border-radius: 500px;
       transform: translateX(-50%);
+      margin-left: -20px;
     }
     &__icon {
       color: #7E7E7E;
@@ -83,6 +81,12 @@
       padding: 0;
       margin: 0;
       flex-direction: row;
+      @media (max-width:1024px) {
+        flex-direction: column;
+      }
+    }
+    &__text {
+      margin-right: 30px;
     }
 }
 
@@ -90,11 +94,73 @@
   background-color: #f2eafb;
 }
 
+.fa-store {
+  color: $color-primary;
+}
+
 .restaurants {
-  padding: 0 5vw;
   background-color: #f6f6f6;
-  align-items: center;
-  &__title {
-    align-self: start;
+  padding: 2rem 1rem;
+}
+
+.restaurant {
+  &__cards {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    column-gap: 2rem;
+    row-gap: 2rem;
+    @media (min-width:1024px) {
+        grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  &__card {
+    background-color: #fff;
+    border-radius: 1rem;
+    position: relative;
+    text-decoration: none;
+    color: inherit;
+    display: block
+  }
+  &__card-image {
+    height: 12rem;
+    width: 100%;
+    border: 0 solid transparent;
+    border-radius: 1rem 1rem 0 0;
+    box-shadow: none;
+    object-fit: cover
+  }
+  &__card-new {
+    background-color: #99e2d0;
+    color: #1b6150;
+    padding: .5rem;
+    border-radius: .125rem;
+    position: absolute;
+    top: 1rem;
+    right: .75rem
+  }
+  &__block {
+    padding: 1rem;
+    position: relative;
+    display: flex;
+    align-items: center
+  }
+  &__block-info {
+    flex: 1
+  }
+  &__block-name {
+    margin: 0 0 .25rem
+  }
+  &__block-city {
+    margin: 0
+  }
+  &__block-heart {
+    height: 2rem;
+    width: 2rem;
+    background-color: initial;
+    border: 0 solid transparent;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center
   }
 }
