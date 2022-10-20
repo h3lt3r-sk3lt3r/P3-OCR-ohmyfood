@@ -3,6 +3,7 @@
   padding: 0;
   @include flexbox-center;
   flex-direction: column;
+  background-color: #eaeaea;
 }
 
 * a {
