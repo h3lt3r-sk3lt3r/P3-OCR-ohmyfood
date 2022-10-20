@@ -453,12 +453,6 @@ template {
   justify-content: center;
   align-items: center;
 }
-.working__contain {
-  max-width: 1280px;
-  background-color: white;
-  margin: auto;
-  position: relative;
-}
 .working__title {
   margin-bottom: 5px;
   margin-top: 0;
