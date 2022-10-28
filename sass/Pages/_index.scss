@@ -40,10 +40,9 @@
 }
 
 .working {
-  padding: 25px 0;
+  padding: 25px;
   width: 100%;
   background: white;
-  @include flexbox-center;
     &__title {
       margin-bottom: 5px;
       margin-top: 0;
@@ -77,6 +76,7 @@
       margin: 0;
       flex-direction: column;
       width: 100%;
+      justify-content: center;
       @media (min-width:1024px) {
         flex-direction: row;
         width: 100%;

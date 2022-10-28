@@ -458,12 +458,9 @@ template {
 }
 
 .working {
-  padding: 25px 0;
+  padding: 25px;
   width: 100%;
   background: white;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 .working__title {
   margin-bottom: 5px;
@@ -498,6 +495,7 @@ template {
   margin: 0;
   flex-direction: column;
   width: 100%;
+  justify-content: center;
 }
 @media (min-width: 1024px) {
   .working__steps {
