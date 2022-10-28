@@ -45,6 +45,9 @@
     &__title {
       margin-bottom: 5px;
       margin-top: 0;
+      @media (min-width: 1024px) {
+        @include flexbox-center;
+      }
     }
     &__step {
       display: flex;

@@ -14,12 +14,18 @@
       color: white;
       font-size: 20px;
       padding: 15px 0;
+      @media (min-width: 1024px) {
+          @include flexbox-center;
+        }
     }
 
     &-links {
       display: inline-flex;
       flex-direction: column;
       width: auto;
+      @media (min-width: 1024px) {
+          @include flexbox-center;
+        }
     }
 
     &-link {
