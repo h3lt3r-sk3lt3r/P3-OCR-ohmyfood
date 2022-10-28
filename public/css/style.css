@@ -346,6 +346,7 @@ template {
   align-items: center;
   height: 80px;
   width: 100%;
+  background-color: white;
 }
 .header__logo {
   font-family: "Shrikhand", cursive;
@@ -373,7 +374,7 @@ template {
 }
 .footer__bloc {
   display: inline;
-  padding: 1rem;
+  padding: 16px;
   width: 100%;
   max-width: 1200px;
 }
@@ -412,11 +413,10 @@ template {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 0 5vw;
   background-color: #eaeaea;
 }
 .location__city {
-  margin-left: 13px;
+  margin-left: 15px;
   font-weight: 400;
 }
 
@@ -426,12 +426,11 @@ template {
 }
 .explore__container {
   width: 100%;
-  padding: 20px;
+  padding: 40px 30px;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  padding-top: 30px;
 }
 .explore__title {
   text-align: center;
@@ -441,6 +440,7 @@ template {
 .explore__text {
   text-align: center;
   font-weight: 300;
+  padding: 10px 0;
 }
 .explore__button {
   opacity: 1;
@@ -458,7 +458,7 @@ template {
 }
 
 .working {
-  padding: 25px;
+  padding: 30px 20px 20px 20px;
   width: 100%;
   background: white;
 }
@@ -474,7 +474,7 @@ template {
   margin: 10px 20px;
   border-radius: 20px;
   position: relative;
-  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.16);
+  box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.2);
 }
 .working__number {
   background-color: #9356DC;
@@ -491,7 +491,7 @@ template {
 }
 .working__steps {
   display: flex;
-  padding: 0;
+  padding: 20px 0;
   margin: 0;
   flex-direction: column;
   width: 100%;
@@ -518,15 +518,16 @@ template {
 
 .restaurants {
   background-color: #f6f6f6;
-  padding: 2rem 1rem;
+  padding: 32px 16px;
+  padding-bottom: 50px;
   width: 100%;
 }
 
 .restaurant__cards {
   display: grid;
   grid-template-columns: repeat(1, 1fr);
-  column-gap: 2rem;
-  row-gap: 2rem;
+  column-gap: 32px;
+  row-gap: 32px;
 }
 @media (min-width: 1024px) {
   .restaurant__cards {
@@ -535,7 +536,7 @@ template {
 }
 .restaurant__card {
   background-color: #fff;
-  border-radius: 1rem;
+  border-radius: 16px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1803921569);
   position: relative;
   text-decoration: none;
@@ -548,24 +549,24 @@ template {
   transform: scale(1.02);
 }
 .restaurant__card-image {
-  height: 12rem;
+  height: 192px;
   width: 100%;
   border: 0 solid transparent;
-  border-radius: 1rem 1rem 0 0;
+  border-radius: 16px 16px 0 0;
   box-shadow: none;
   object-fit: cover;
 }
 .restaurant__card-new {
   background-color: #99e2d0;
   color: #1b6150;
-  padding: 0.5rem;
-  border-radius: 0.125rem;
+  padding: 8px;
+  border-radius: 2px;
   position: absolute;
-  top: 1rem;
-  right: 0.75rem;
+  top: 16px;
+  right: 12px;
 }
 .restaurant__block {
-  padding: 1rem;
+  padding: 16px;
   position: relative;
   display: flex;
   align-items: center;
@@ -574,15 +575,15 @@ template {
   flex: 1;
 }
 .restaurant__block-name {
-  margin: 0 0 0.25rem;
+  margin: 0 0 4px;
 }
 .restaurant__block-city {
   margin: 0;
   font-weight: 300;
 }
 .restaurant__block-heart {
-  height: 2rem;
-  width: 2rem;
+  height: 32px;
+  width: 32px;
   background-color: initial;
   border: 0 solid transparent;
   padding: 0;
@@ -593,19 +594,19 @@ template {
 
 .banner-image {
   max-width: 100%;
-  max-height: 32rem;
+  max-height: 512px;
   width: 100%;
   object-fit: cover;
 }
 
 .menu {
-  margin-top: -4rem;
-  border-radius: 2rem 2rem 0 0;
+  margin-top: -64px;
+  border-radius: 32px 32px 0 0;
   background-color: #f6f6f6;
   position: relative;
 }
 .menu__header {
-  padding: 1rem 2rem 0 1rem;
+  padding: 16px 32px 0 16px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -614,8 +615,8 @@ template {
   font-family: Shrikhand, "cursive";
 }
 .menu__heart {
-  height: 2rem;
-  width: 2rem;
+  height: 32px;
+  width: 32px;
   border: 0 solid transparent;
   padding: 0;
   display: flex;
