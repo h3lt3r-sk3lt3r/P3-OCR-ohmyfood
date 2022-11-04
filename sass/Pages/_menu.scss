@@ -76,10 +76,7 @@
   box-shadow: 4px 4px 16px rgba(0, 0, 0, 0.1);
   overflow: hidden;
   cursor: pointer;
-  // animation: itemAppear 0.6s;
-  // animation-timing-function: cubic-bezier(.5, 1.58, .34, .82);
-  // animation-fill-mode: both;
-  // transform: scale(0);
+
   max-width: 100%;
   &__header {
     white-space: nowrap;
@@ -113,7 +110,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    // transition-duration: 0.5s;
+
   }
   &:hover &__check {
     margin-right: -16px;
@@ -126,32 +123,10 @@
     align-items: center;
     justify-content: center;
     border-radius: 100px;
-    // transform: rotate(180deg);
-    // transition-duration: 440ms;
+
   }
-  // &:hover &__wrapIcon {
-  //   transform: rotate(0);
-  // }
-  // &__icon {
-  //   color: $color-tertiary;
-  // }
+
 }
-
-// @for $i from 0 to 9 {
-//   .delay-#{$i} {
-//     animation-delay: calc($i / 10)s;
-//   }
-// }
-
-// @keyframes itemAppear {
-//   0% {
-//     transform: scale(0)
-//   }
-
-//   100% {
-//     transform: scale(1);
-//   }
-// }
 
 .command {
   @include flexbox-center;
