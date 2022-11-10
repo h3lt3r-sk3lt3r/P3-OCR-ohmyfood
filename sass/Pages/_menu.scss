@@ -76,8 +76,13 @@
   box-shadow: 4px 4px 16px rgba(0, 0, 0, 0.1);
   overflow: hidden;
   cursor: pointer;
-
   max-width: 100%;
+  animation: slide-up 1s ease both;
+  @for $i from 1 through 4{
+    &.item#{$i} {
+      animation-delay: calc(0.1s * #{$i});
+    }
+  }
   &__header {
     white-space: nowrap;
     text-overflow: ellipsis;
@@ -123,7 +128,6 @@
     align-items: center;
     justify-content: center;
     border-radius: 100px;
-
   }
 
 }
@@ -140,17 +144,4 @@
       @include button-hover
     }
   }
-}
-
-.delay-0 {
-  animation: slide-up 0.8s ease;
-}
-.delay-1 {
-  animation: slide-up 1s ease;
-}
-.delay-2 {
-  animation: slide-up 1.2s ease;
-}
-.delay-3 {
-  animation: slide-up 1.4s ease;
 }
