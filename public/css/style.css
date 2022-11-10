@@ -1,3 +1,11 @@
+@keyframes slide-up {
+  0% {
+    transform: translateY(30px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
 .main {
   margin: 0;
   padding: 0;
@@ -763,6 +771,46 @@ template {
   opacity: 0.8;
   cursor: pointer;
   box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.6);
+}
+
+.delay-0 {
+  animation: slide-up 0.8s ease;
+}
+
+.delay-1 {
+  animation: slide-up 1s ease;
+}
+
+.delay-2 {
+  animation: slide-up 1.2s ease;
+}
+
+.delay-3 {
+  animation: slide-up 1.4s ease;
+}
+
+.delay-4 {
+  animation: slide-up 1.6s ease;
+}
+
+.delay-5 {
+  animation: slide-up 1.8s ease;
+}
+
+.delay-6 {
+  animation: slide-up 2s ease;
+}
+
+.delay-7 {
+  animation: slide-up 2.2s ease;
+}
+
+.delay-8 {
+  animation: slide-up 2.4s ease;
+}
+
+.delay-9 {
+  animation: slide-up 2.6s ease;
 }
 
 /*# sourceMappingURL=style.css.map */
