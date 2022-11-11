@@ -348,6 +348,46 @@ template {
   display: none;
 }
 
+.spinner {
+  height: 100%;
+  background: white;
+  margin: auto;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 20;
+  animation: spinner 2s linear;
+  visibility: hidden;
+}
+.spinner__border {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 10px solid transparent;
+  border-top: 10px solid #9356DC;
+  border-bottom: 10px solid #FF79DA;
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  margin: auto;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  animation: spinner-border 2s linear;
+  z-index: 10;
+  visibility: hidden;
+}
+.spinner__center {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: #99E2D0;
+}
+
 .header {
   box-shadow: 0px 5px 6px 0px rgba(0, 0, 0, 0.2);
   position: relative;
