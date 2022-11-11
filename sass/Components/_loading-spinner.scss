@@ -8,7 +8,7 @@
   right: 0;
   bottom: 0;
   z-index: 20;
-  animation: spinner 2s linear;
+  animation: spinner 3s linear;
   visibility: hidden;
 
   &__border {
@@ -23,8 +23,8 @@
     top: 0;
     left: 0;
     right: 0;
-    bottom: 0;
-    animation: spinner-border 2s linear;
+    bottom: 300px;
+    animation: spinner-border 3s cubic-bezier(.63, 2.12, 0, -0.65);
     z-index: 10;
     visibility: hidden;
   }
@@ -34,5 +34,6 @@
     height: 15px;
     border-radius: 50%;
     background-color: $color-tertiary;
+    animation: spinner-border 3s cubic-bezier(.34, -1.46, .91, 2.12)
   }
 }
