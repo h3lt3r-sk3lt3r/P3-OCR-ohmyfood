@@ -1,4 +1,4 @@
-.spinner {
+.loading-spinner {
   height: 100%;
   background: white;
   margin: auto;
@@ -13,7 +13,7 @@
 
   &__border {
     @include flexbox-center;
-    border: 10px solid transparent;
+    //border: 10px solid transparent;
     border-top: 10px solid $color-primary;
     border-bottom: 10px solid $color-secondary;
     border-radius: 50%;
@@ -31,10 +31,9 @@
   }
 
   &__center {
-    width: 15px;
+    width: 40px;
     height: 15px;
     border-radius: 50%;
     background-color: $color-tertiary;
-
   }
 }
