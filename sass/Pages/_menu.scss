@@ -69,7 +69,7 @@
 
 .menuElement {
   background-color: white;
-  padding: 16px;
+  padding-left: 16px;
   display: flex;
   border-radius: 12px;
   margin: 16px 0;
@@ -90,13 +90,13 @@
     flex: 1;
   }
   &__title {
-    margin: 0;
+    margin-bottom: 0;
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden;
   }
   &__bio {
-    margin: 0;
+    margin-top: 0;
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden;
@@ -106,28 +106,32 @@
     display: flex;
     justify-content: flex-end;
     align-items: flex-end;
-    padding-left: 8px;
+    padding-bottom: 16px;
   }
   &__check {
+    @include flexbox-center;
     background-color: $color-tertiary;
-    margin: 16px 80px 16px 16px;
-    width: 64px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
+    margin-left: 20px;
+    margin-right: -60px;
+    border-radius: 0 12px 12px 0;
+    transition: all 0.5s ease;
+    i {
+      font-size: 26px;
+      color: white;
+    }
   }
-  &:hover &__check {
-    margin-right: -16px;
+  &:hover > &__check {
+    margin-right: 0px;
+    i {
+      transform: rotate(360deg);
+      transition: transform 0.5s ease-in-out;
+      }
   }
   &__wrapIcon {
-    height: 26px;
-    width: 26px;
-    background-color: white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 100px;
+    @include flexbox-center;
+    width: 60px;
+    color: white;
+    border-radius: 12px;
   }
 
 }
