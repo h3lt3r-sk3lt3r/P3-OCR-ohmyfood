@@ -725,13 +725,13 @@ template {
   flex: 1;
 }
 .menuElement__title {
-  margin-bottom: 0;
+  margin: 12px 0 12px 0;
   white-space: nowrap;
   text-overflow: ellipsis;
   overflow: hidden;
 }
 .menuElement__bio {
-  margin-top: 0;
+  margin: 0 0 12px 0;
   white-space: nowrap;
   text-overflow: ellipsis;
   overflow: hidden;
