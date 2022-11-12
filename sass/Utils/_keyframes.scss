@@ -42,3 +42,15 @@
     visibility: hidden;
   }
 }
+
+@keyframes filling-heart {
+  0% {
+    background-position: center 27px;
+    transform: scale(1);
+  }
+
+  100% {
+    background-position: center 0px;
+    transform: scale(1.1);
+  }
+}

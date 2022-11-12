@@ -1,0 +1,14 @@
+.btn-heart {
+  font-size: 24px;
+  background: $gradient;
+  background-repeat: no-repeat;
+  background-position: center 27px;
+  background-clip: text;
+  color: transparent;
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: rgba(0, 0, 0, 1);
+
+  &:hover {
+    animation: filling-heart 0.7s cubic-bezier(.03, 1.37, .87, -0.38) forwards;
+  }
+}

@@ -150,7 +150,12 @@
     padding: 16px;
     position: relative;
     display: flex;
-    align-items: center
+    align-items: center;
+    button {
+      @extend .btn-heart;
+      border: none;
+      cursor: pointer;
+    }
   }
   &__block-info {
     flex: 1
