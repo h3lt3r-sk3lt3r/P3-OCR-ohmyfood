@@ -425,7 +425,7 @@ template {
   animation: spinner-border 3s cubic-bezier(0.34, -1.46, 0.91, 2.12);
 }
 
-.btn-heart, .menuTop__header button, .restaurant__block button {
+.btn-heart, .menuTop__header button, .restaurant__block-heart {
   font-size: 24px;
   background: linear-gradient(190deg, #FF79DA, #9356DC);
   background-repeat: no-repeat;
@@ -435,7 +435,7 @@ template {
   -webkit-text-stroke-width: 2px;
   -webkit-text-stroke-color: rgb(0, 0, 0);
 }
-.btn-heart:hover, .menuTop__header button:hover, .restaurant__block button:hover {
+.btn-heart:hover, .menuTop__header button:hover, .restaurant__block-heart:hover {
   animation: filling-heart 0.7s cubic-bezier(0.03, 1.37, 0.87, -0.38) forwards;
 }
 
@@ -693,7 +693,7 @@ template {
   display: flex;
   align-items: center;
 }
-.restaurant__block button {
+.restaurant__block-heart {
   border: none;
   cursor: pointer;
 }

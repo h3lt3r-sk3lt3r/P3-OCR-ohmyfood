@@ -151,11 +151,16 @@
     position: relative;
     display: flex;
     align-items: center;
-    button {
-      @extend .btn-heart;
-      border: none;
-      cursor: pointer;
-    }
+    // button {
+    //   @extend .btn-heart;
+    //   border: none;
+    //   cursor: pointer;
+    // }
+  }
+  &__block-heart {
+    @extend .btn-heart;
+    border: none;
+    cursor: pointer;
   }
   &__block-info {
     flex: 1
