@@ -3,7 +3,8 @@
   background: $gradient;
   background-repeat: no-repeat;
   background-position: center 27px;
-  background-clip: text;
+  -webkit-background-clip: text;
+          background-clip: text;
   color: transparent;
   -webkit-text-stroke-width: 2px;
   -webkit-text-stroke-color: rgba(0, 0, 0, 1);

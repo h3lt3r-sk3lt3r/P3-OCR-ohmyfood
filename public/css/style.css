@@ -430,6 +430,7 @@ template {
   background: linear-gradient(190deg, #FF79DA, #9356DC);
   background-repeat: no-repeat;
   background-position: center 27px;
+  -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
   -webkit-text-stroke-width: 2px;
