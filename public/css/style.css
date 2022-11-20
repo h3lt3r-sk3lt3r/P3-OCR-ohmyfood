@@ -18,7 +18,6 @@
   }
   100% {
     opacity: 0;
-    visibility: hidden;
   }
 }
 @keyframes spinner-border {
@@ -32,7 +31,6 @@
   100% {
     transform: rotate(360deg);
     opacity: 0;
-    visibility: hidden;
   }
 }
 @keyframes filling-heart {
@@ -72,7 +70,6 @@
 
 body {
   font-family: "Roboto", sans-serif;
-  margin: 0;
   background: #f6f6f6;
 }
 
@@ -460,7 +457,7 @@ template {
   height: 50px;
   position: absolute;
   left: 35px;
-  top: 40%;
+  top: 25px;
   font-size: 20px;
 }
 .header__menu-back a {
@@ -680,7 +677,7 @@ template {
   object-fit: cover;
 }
 .restaurant__card-new {
-  background-color: #99e2d0;
+  background-color: #99E2D0;
   color: #1b6150;
   padding: 8px;
   border-radius: 2px;
@@ -715,8 +712,8 @@ template {
   border: 0 solid transparent;
   padding: 0;
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
 }
 
 .banner-image {
@@ -810,13 +807,11 @@ template {
 }
 .menuElement__title {
   margin: 12px 0 12px 0;
-  white-space: nowrap;
   text-overflow: ellipsis;
   overflow: hidden;
 }
 .menuElement__bio {
   margin: 0 0 12px 0;
-  white-space: nowrap;
   text-overflow: ellipsis;
   overflow: hidden;
 }
